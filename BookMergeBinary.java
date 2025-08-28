@@ -113,9 +113,9 @@ public class BookMergeBinary {
         };
 
         // Sort by Title
-        // System.out.println("Sorted by Title:");
-        // mergeSort(books, 0, books.length - 1, Comparator.comparing(b -> b.title));
-        // for (Book b : books) System.out.println(b);
+        System.out.println("Sorted by Title:");
+        mergeSort(books, 0, books.length - 1, Comparator.comparing(b -> b.title));
+        for (Book b : books) System.out.println(b);
         
         // Sort by Author
         System.out.println("\nSorted by Author:");
@@ -123,9 +123,9 @@ public class BookMergeBinary {
         for (Book b : books) System.out.println(b);
 
         // // Sort by Price
-        // System.out.println("\nSorted by Price:");
-        // mergeSort(books, 0, books.length - 1, Comparator.comparingDouble(b -> b.price));
-        // for (Book b : books) System.out.println(b);
+        System.out.println("\nSorted by Price:");
+        mergeSort(books, 0, books.length - 1, Comparator.comparingDouble(b -> b.price));
+        for (Book b : books) System.out.println(b);
 
         // Book result = binarySearchByTitle(books, "1984");
         Book result = binarySearchByAuthor(books, "Frank Herbert");
